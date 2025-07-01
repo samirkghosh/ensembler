@@ -1,0 +1,164 @@
+/**
+ * Author: Ritu Modi
+ * Date: 04-04-2024
+ The file contains CSS of customer_login page and complain_form page
+ **/
+<style>
+/* Set default font family for all elements */
+* {
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* primary header background */
+.primary_header {
+    background: #ADD8E6;
+}
+/* Use for complain page header */
+    .primary_headerr
+    {
+      background:#00318bfc;
+    }
+
+/* Margin and font size for aligning items */
+.align-items-center {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Styles for create OTP link */
+a#create_otp {
+    float: inherit;
+    display: initial;
+}
+
+/* Styles for login container in top navigation */
+.topnavlogin .login-container {
+    float: unset !important;
+    text-align: center;
+}
+
+/* Reset margin for rows */
+.row {
+    margin: 0px;
+}
+
+/* Styles for track icon */
+#track_icon {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Styles for search label in track form */
+#track_form #search_label {
+    line-height: 58px;
+    margin-right: 14px;
+}
+
+/* Button style for dark blue background */
+.bg-dark-blue.button {
+    background: #00318bfc;
+}
+
+/* Card styles */
+.card {
+    padding: 30px 40px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for labels */
+label {
+    font-weight: 500;
+}
+
+/* Styles for h6 elements */
+h6 {
+    color: #0097d1;
+}
+
+/* Styles for ticket class */
+.ticket {
+    background: aliceblue;
+    color: chocolate;
+    font-weight: 700;
+}
+
+/* Footer styles */
+.footerlogin {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 1em;
+    width: 100%;
+    background: #ADD8E6;
+    border-top: 1px solid #fff;
+}
+/* Use for complain page */
+.footerrlogin {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            padding: 1em;
+            width: 100%;
+            background:#00318bfc;
+            border-top: 1px solid #fff;
+            border-top: 1px solid #fff;
+        }
+
+/* Styles for footer text */
+.footerlogin p {
+    color: #222;
+    text-align: center;
+    font-size: 13px;
+}
+/* Use for complain page */
+ .footerrlogin p {
+            /* color: #fff; */
+            color: #fff;
+            text-align: center;
+            font-size: 13px;
+        }
+/* Styles for post order info label */
+.post_order_info label {
+    margin-bottom: 3px;
+    display: block;
+    margin-top: 12px;
+    margin-right: 14px;
+    margin-left: -10px;
+}
+
+/* Styles for error labels */
+.error_label_email {
+    font-size: 12px;
+    color: red;
+}
+
+.error_label,
+.error_label_name {
+    font-size: 12px;
+    color: red;
+}
+
+/* Styles for report page and report page ticket */
+#report_page,
+#report_page_ticket {
+    float: right;
+    background: #CFB53B;
+    color: white;
+}
+
+/* Styles for title heading */
+.title_heading {
+    text-align: center;
+    font-weight: 700;
+    color: #00318bfc;
+}
+/* Hover style for anchor tags */
+a:hover {
+    text-decoration: none;
+}
+</style>

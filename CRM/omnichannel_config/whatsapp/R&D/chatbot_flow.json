@@ -1,0 +1,135 @@
+{
+  "menu": {
+    "text": "Hello, I am Tangi, your virtual assistant!\nPlease choose an option:\n1. Apply for a HELB Loan\n2. Loan Repayment\n3. Check Loan Status\n4. Update Personal Details\n5. Compliance/Statement Request\n6. Download documents/forms\n7. Chat with an Agent\n\n(Reply with 0 to go back at any level)",
+    "options": {
+      "1": {
+        "label": "Apply for a HELB Loan",
+        "submenu": {
+          "text": "Please choose loan type:\n1. Undergraduate Loan\n2. TVET Loan\n3. Higher Education Financing (HEF) Loan\n4. First-Time Applicant Guide\n5. Application Deadline Info",
+          "options": {
+            "1": {
+              "label": "Undergraduate Loan",
+              	"action": {
+                  "type": "file",
+                  "url": "https://alliance-infotech.in/documents/ApplyUGloan.pdf"
+                }
+            },
+            "2": { 
+            	"label": "TVET Loan",
+            	"action": {
+                      "type": "file",
+                      "url": "https://alliance-infotech.in/documents/ApplyTVETloan.pdf"
+                }
+             },
+            "3": { "label": "HEF Loan",
+            	"action": {
+                      "type": "file",
+                      "url": "https://alliance-infotech.in/documents/ApplyHEF.pdf"
+                }
+             },
+            "4": { "label": "First-Time Applicant Guide",
+            	"action": {
+                      "type": "file",
+                      "url": "https://alliance-infotech.in/documents/FirstGuide.pdf"
+                }
+             },
+            "5": { "label": "Application Deadline Info" }
+          }
+        }
+      },
+      "2": { 
+      	"label": "Loan Repayment" ,
+      	"submenu": {
+          "text": "Please choose loan type:\n1. Repayment Methods\n2. How to Get Payment Details\n3. Payment Confirmation Issues\n4. Penalties & Waiver Information.",
+          "options": {
+            "1": {
+              "label": "Repayment Methods",
+              "submenu": {
+                "text": "HELB loan repayment is channeled through e-Citizen Repayment Gateway. Please download the Customer Journey Map (https://www.helb.co.ke/wp-content/uploads/2023/12/Customer-JourneyMapping.pdf) to follow the steps. \n(Reply with 0 to go back)",
+                "options": {}
+              }
+            },
+            "2": { 
+            	"label": "How to Get Payment Details" ,
+            	"submenu": {
+                "text": "You can easily Download your personal statement from the HELB portal (https://portal.hef.co.ke/auth/ signin) OR the HELB Mobile Application.. \n(Reply with 0 to go back)",
+              	"options": {}
+              }
+            },
+            "3": { "label": "Payment Confirmation Issues",
+	            "submenu": {
+	                "text": "Upon completion of loan repayment, kindly seek clearance from HELB. Please note that only HELB and not your employer can confirm your loan repayment status. HELB shall confirm loan repayment completion by issuing certificate of clearance. For clearance, please fill in the Loan Recovery Enquiry form.. \n(Reply with 0 to go back)",
+	            	"options": {}
+	            }
+            },
+            "4": { 
+            	"label": "Penalties & Waiver Information",
+        		"submenu": {
+	                "text": "A penalty of 5% per month is charged on the employer for every deduction that remains unpaid.If you overpay your loan, you will receive a refund from HELB and not your employer. To claim refund, please fill in the Loan Recovery Enquiry form.. \n(Reply with 0 to go back)",
+	            	"options": {}
+	           	}		
+	        }
+          }
+        }
+      },
+      "3": {
+		  "label": "Check Loan Status",
+		  "submenu": {
+		    "text": "Please provide your National ID number to check your loan status.\n\n(Reply with 0 to go back)",
+		    "options": {},
+		    "input": "national_id"
+		  }
+		},
+      "4": { "label": "Update Personal Details",
+      	 "submenu": {
+          "text": "You can easily update your personal details from the HELB portal OR the HELB Mobile Application.",
+          "options": {}
+      	}
+
+       },
+      "5": { "label": "Compliance/Statement Request",
+	      "submenu": {
+	          "text": "Loanee Compliance Certificate (Beneficiaries)This Certificate is issued to the beneficiaries of HELB loan who are up to date with their loan repayment. It is also issued to the beneficiaries who are still within the repayment grace period. Once a beneficiary has completed repaying the loan, he/she is issued Certificate of Clearance. (https://portal.hef.co.ke/auth/signin). This service is not charged.\n Non-Loanee Compliance Certificate (Non-Beneficiaries)If you did not benefit from HELB loan, you can apply for the Non-loanee Compliance Certificate from the HELB Portal (https://portal.hef.co.ke/auth/signin) or e-Citizen Portal (https://accounts.ecitizen.go.ke/en). This service is not charged.",
+	          "options": {}
+	      	}
+      	},
+      "6": { 
+      	"label": "Download documents/forms",
+        "submenu": {
+          "text": "Please choose a document to download:\n1. Student Loan Protection Scheme\n2. Undergraduate and TVET Scholarship Application Procedure\n3. HELB Inquiry Form\n4. Student Bank & Phone Details Change Form",
+          "options": {
+            "1": {
+              "label": "Student Loan Protection Scheme",
+              "action": {
+                "type": "file",
+                "url": "https://alliance-infotech.in/documents/StudentLoanForm.pdf"
+              }
+            },
+            "2": {
+              "label": "Undergraduate and TVET Scholarship and Loan Application Procedure",
+              "action": {
+                "type": "file",
+                "url": "https://alliance-infotech.in/documents/UndergraduateForm.pdf"
+              }
+            },
+            "3": {
+              "label": "HELB Inquiry Form",
+              "action": {
+                "type": "file",
+                "url": "https://alliance-infotech.in/documents/HELB-Inquiry-Form.pdf"
+              }
+            },
+            "4": {
+              "label": "Student Personal Bank and Phone Details Change Request Form",
+              "action": {
+                "type": "file",
+                "url": "https://alliance-infotech.in/documents/Studentform.pdf"
+              }
+            }
+          }
+        }
+      },
+      "7": { "label": "Chat with an Agent" }
+    }
+  }
+}

@@ -1,0 +1,385 @@
+.body {
+    background: #fc4a1a;
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);
+    background: linear-gradient(to right, #f7b733, #fc4a1a);
+}
+
+.btn {
+    background: coral;
+    border-color: coral;
+}
+
+
+.link {
+    color: coral;
+}
+
+.link:hover {
+    color: coral;
+}
+
+.select2-container--bootstrap4 .select2-results__option--highlighted,
+.select2-container--bootstrap4 .select2-results__option--highlighted.select2-results__option[aria-selected="true"] {
+    color: #fff;
+    background-color: coral;
+}
+
+.brand-link .brand-image {
+    float: left;
+    margin-left: -0.2rem;
+    margin-right: 0.5rem;
+    margin-top: -13px;
+    max-height: 68px;
+}
+
+.icon {
+    color: coral;
+}
+
+@media (min-width: 992px) {
+
+    .sidebar-mini.sidebar-collapse .main-sidebar,
+    .sidebar-mini.sidebar-collapse .main-sidebar::before {
+        margin-left: 0;
+        width: 5.6rem;
+    }
+}
+
+.foot-img {
+    height: 50px;
+    width: 70px;
+    float: right;
+    margin-top: -10px
+}
+
+.page-item.active .page-link {
+    background: coral;
+    border-color: coral;
+}
+
+.limi {
+    color: darkgray;
+    font-size: 14px;
+    ;
+}
+
+.card-info.card-outline {
+    border-color: coral;
+}
+
+table.dataTable.table-sm .sorting:before,
+table.dataTable.table-sm .sorting_asc:before,
+table.dataTable.table-sm .sorting_desc:before {
+    display: none;
+}
+
+table.dataTable.table-sm .sorting:after,
+table.dataTable.table-sm .sorting_asc:after,
+table.dataTable.table-sm .sorting_desc:after {
+    display: none;
+}
+
+
+
+.error {
+    color: red;
+}
+
+.navbar-light {
+    background-color: coral;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: coral;
+}
+
+@media (min-width: 768px) {
+
+    body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .content-wrapper,
+    body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-footer,
+    body:not(.sidebar-mini-md):not(.sidebar-mini-xs):not(.layout-top-nav) .main-header {
+        transition: margin-left .3s ease-in-out;
+        margin-left: 0;
+    }
+}
+
+.btn {
+    color: #fff;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+.card-info.card-outline-tabs>.card-header a.active {
+    border-top: 3px solid coral;
+}
+
+.interaction-chat {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    height: 500px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.interaction-chat:hover {
+    overflow: auto;
+}
+
+.para {
+    font-size: 13px;
+    line-height: 20px;
+    opacity: 0.8;
+    overflow: hidden;
+    letter-spacing: 0.3px;
+}
+
+.left-bg {
+    background: #f5f5f5;
+}
+
+.right-bg {
+    background: aliceblue;
+}
+
+.direct-chat-text {
+    color: #566069;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 0.3px;
+    outline: none;
+    line-height: 2;
+}
+
+.direct-chat-img {
+    border-radius: 0;
+    float: left;
+    height: 25px;
+    width: 25px;
+}
+
+.l_c_h {
+    width: 300px;
+    position: fixed;
+    bottom: 0;
+    right: 6px;
+    background: #fff;
+    border-radius: 3px;
+    z-index: 5000;
+    display: block;
+}
+
+.l_c_h .c_h {
+    cursor: pointer;
+    border-radius: 0px;
+    border-top: 1px solid coral;
+    line-height: 34px;
+
+}
+
+.l_c_h .left_c {
+    color: #ebebeb;
+    width: 150px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.l_c_h .right_c {
+    text-align: center;
+    background: coral;
+    line-height: 36px;
+}
+
+.l_c_h .right_c a {
+    color: #ebebeb;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+    cursor: pointer !important;
+    font-size: 16px;
+    line-height: normal !important;
+    margin-top: 0 !important;
+    padding: 1px 0px !important;
+    text-align: center !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.clear {
+    clear: both;
+}
+
+.left1 {
+    float: left;
+}
+
+.right2 {
+    float: right;
+}
+
+.left_icons {
+    width: 35px;
+    height: auto;
+    text-align: center;
+    color: #999;
+    background: #ff8f32;
+    font-size: 15px;
+}
+
+.left_icons a {
+    color: #fff;
+    font-weight: normal;
+}
+
+.center_icons {
+    text-align: center;
+    font-size: smaller;
+    color: #222;
+    padding: 2px 0px 0px 5px;
+}
+
+.logout img {
+    margin-top: 8px;
+}
+
+.card-comments .comment-text {
+    color: #78838e;
+    margin-left: 0;
+}
+
+.main-footer {
+    height: 56px;
+}
+
+.content-wrapper {
+    background: #fff;
+}
+
+.nav-pills .menu-link.active,
+.nav-pills .show>.menu-link {
+    color: coral;
+    background-color: #fff;
+    border: 1px solid coral;
+}
+
+.menu-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.info-box {
+    min-height: 0;
+    padding: 7px;
+    height: 50px;
+    background-color: cornsilk;
+    box-shadow: 0 0 1px rgb(0 0 0 / 23%), 0 6px 4px rgb(0 0 0 / 32%);
+}
+
+.info-box-text {
+    font-size: smaller;
+}
+
+.info-box .info-box-icon {
+    width: 36px;
+}
+
+.info-box .info-box-number {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.bg-green2 {
+    background-color: #12e094a8;
+    color: #fff;
+}
+
+.bg-purple2 {
+    background-color: #99c0fa;
+    color: #fff;
+}
+
+.fa,
+.fas,
+.fab,
+.far {
+    font-size: 15px;
+}
+
+.btn2 {
+    border: 0.5px solid coral;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: coral;
+    border-color: coral;
+    color: #fff;
+
+}
+
+.link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.interaction-chat {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    height: 401px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#template {
+    padding-left: 20px;
+    margin-top: 12px;
+    display: flex;
+    columns: thick;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    font-size: smaller;
+}

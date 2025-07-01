@@ -1,0 +1,247 @@
+/*
+---------------------------------------------------------------
+  Note that styles you apply to the main menu items are inherited by the sub menus items too.
+  If you'd like to avoid this, you could use child selectors (not supported by IE6) - for example:
+  .sm-simple > li > a { ... } instead of .sm-simple a { ... }
+---------------------------------------------------------------*/
+
+/* bulletin slider css
+===================*/
+
+	.holder { 
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    margin-left: 36px;
+    font-size: 15px;
+    height: 22px;
+    padding: -4px;
+    margin-top: 7px;
+    margin-bottom: -7px;
+}
+.holder > p { 
+    position: absolute;
+    -webkit-transition: all 5s;
+    transition: all 4s;
+    padding-left: -65px;
+    color: #efffff;
+    font-family: fangso;
+    font-weight: 500;
+}
+.left   { left: -100%; }
+.right  { left: 100%; }
+.middle { left: 0; }
+.holder p:before {
+    content: "\201C";
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
+}
+.holder p:after {
+    content: "\201D";
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-left: 0.1em;
+    vertical-align: -0.45em;
+}
+.footer-wrap {
+    padding-top: 8px !Important;
+}
+
+/* Sidebar file css
+===================*/
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #00318bfc;
+    font-size: x-small;
+}
+
+.sidebar .nav-link {
+    /* font-weight: 500; */
+    /* color: var(--bs-dark); */
+    /* color: #fff; */
+    font-size: x-small;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.disable_menu{
+border: 1px solid #999999 !important;
+background-color: #cccccc !important;
+color: #666666 !important;
+}
+.closebtn:hover {
+color: black;
+}
+.popup-container {
+display: none;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #fff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+padding: 20px;
+z-index: 1000;
+font-size: 14px;
+}
+
+.popup-content {
+text-align: center;
+}
+.closebtn {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 20px;
+cursor: pointer;
+}
+
+/*search button css*/
+.dataTables_filter input {
+    height: 26px !important;
+    border-radius: 0px;
+    font-weight: normal;
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    outline: none;
+    padding: -12px 9px;
+    font-size: 10pt;
+    padding: 11px;
+    margin-top: -7px;
+}
+/*helpdesk page css*/
+.dot {
+   height: 8px;
+    width: 7px;
+    background-color: #d91d1d;
+    border-radius: 50%;
+    display: table;
+    float: left;
+}
+.img_priorty{
+   height: 17px;
+    width: 17px;
+}
+.dt-buttons .dataTables_filter
+{
+ display: none;
+}
+
+/*adding sidebar css [Aarti][27-11-2024]*/
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+.disable_menu ,.disable_channel{
+    border: 1px solid #999999 !important;
+    background-color: #cccccc !important;
+    color: #666666 !important;
+}
+.closebtn:hover {
+  color: black;
+}
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+    font-size: 14px;
+}
+
+.popup-content {
+    text-align: center;
+}
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.scrollable-menu {
+    max-height: 200px;  /* Set the maximum height */
+    overflow-y: auto;   /* Enable vertical scrolling */
+}
+ /* Scope styles to only apply to break options */
+#breakList .active-break {
+    background-color: green !important;
+    color: white !important;
+}
+
+#breakList .disabled {
+    pointer-events: none; /* Disable click */
+    opacity: 0.5; /* Gray out the item */
+}
+
+#onBreakText {
+    color: green;
+    font-weight: bold;
+    margin-left: 10px;
+}
+/* Dropdown menu styles */
+#status-dropdown {
+    /*display: none;*/
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.status-option {
+    padding: 8px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.status-option:hover {
+    background-color: #f0f0f0;
+}
+
+/* Status icon styling */
+.status-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.available { background-color: green; }
+.busy { background-color: red; }
+.dnd { background-color: #d32f2f; }
+.brb { background-color: orange; }
+.away { background-color: gray; }
+.offline { background-color: gray; }
+
+/* Arrow icon for current status */
+.ico-settingstatus {
+    display: flex;
+    align-items: center;
+}
+
+#current-status {
+    cursor: pointer;
+}
+.status-available {
+    background-color: green;
+}
+
+.status-away {
+    background-color: gray;
+}

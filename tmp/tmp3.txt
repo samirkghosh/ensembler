@@ -1,0 +1,165 @@
+; You need to restart Asterisk to re-configure the DAHDI channel
+;      are re-configured during a reload (signalling, as well as PRI and
+; Trunk groups are used for NFAS connections.
+; Group: Defines a trunk group.
+;        trunkgroup => <trunkgroup>,<dchannel>[,<backup1>...]
+;        trunkgroup  is the numerical trunk group to create
+;        dchannel    is the DAHDI channel which will have the
+;                    d-channel for the trunk.
+;trunkgroup => 1,24,48
+;trunkgroup => 1,24
+; Spanmap: Associates a span with a trunk group
+;        spanmap => <dahdispan>,<trunkgroup>[,<logicalspan>]
+;        trunkgroup  is the trunkgroup (specified above) for the mapping
+;        logicalspan is the logical span number within the trunk group to use.
+; Enable service message support for channel. Must be set after switchtype.
+; from_channel:   Use the CALLERID(ton) value from the channel.
+; from_channel:   Use the CONNECTEDLINE(ton) value from the channel.
+;pricpndialplan=from_channel
+; Enable per ISDN span to force a RESTART on a channel that returns a cause
+; channel is stuck in an unavailable state on the peer, then this might
+; help release the channel.  It is worth noting that the next outgoing call
+; Asterisk makes will likely try the same channel again.
+; send calls to the channel in the restarting state.
+; attached to the B channel at this time without explicitly sending the
+; progress indicator ie informing the CPE side to attach to the B channel
+; If you need to use the logical channel mapping with your Q.SIG PRI instead
+; of the physical mapping you must use the qsigchannelmapping option.
+; logical:  Use the logical channel mapping
+; physical: Use physical channel mapping (default)
+;qsigchannelmapping=logical
+; the B channel) enable this option.
+; asterisk channel will result in the channel delaying its hangup in an
+; period is configured as one half the T305 timer length. If the channel
+; pri_cpe:        PRI signalling, CPE side
+; pri_net:        PRI signalling, Network side
+; bri_cpe:        BRI PTP signalling, CPE side
+; bri_net:        BRI PTP signalling, Network side
+; bri_cpe_ptmp:   BRI PTMP signalling, CPE side
+; bri_net_ptmp:   BRI PTMP signalling, Network side
+; e911:           E911 (MF) style signalling
+;                 channel bank)
+;                 channel bank)
+;                 channel bank)
+;                 the channel bank)
+; signalling of a channel can not be changed on a reload.
+;signalling=fxo_ls
+; If you have an outbound signalling format that is different from format
+; specified above (but compatible), you can specify outbound signalling format,
+; (see below). The 'signalling' format specified will be the inbound signalling
+; format. If you only specify 'signalling', then it will be the format for
+; outsignalling can only be one of:
+; outsignalling cannot be changed on a reload.
+;signalling=featdmf
+;outsignalling=featb
+; How long generated tones (DTMF and MF) will be played on the channel
+; This is a global, rather than a per-channel setting. It will not be
+; Type of caller ID signalling in use
+;                   incoming channel to initate cid acquisition
+; For analog lines, enables Asterisk to use dialtone detection per channel
+; A call waiting call is a SETUP message with no B channel selected.
+; A call waiting call is a SETUP message with no B channel selected.
+; Whether or not to use the caller ID presentation from the Asterisk channel
+; This is setable per channel.
+; DAHDI to briefly mute the channel, send an impulse, and use the impulse
+; Hardware gain settings increase/decrease the analog volume level on a channel.
+;   A positive number increases the volume level on a channel, and a negavive
+;   hwrxgain: Hardware receive gain for the channel (into Asterisk).
+;   hwtxgain: Hardware transmit gain for the channel (out of Asterisk).
+; Software gain settings digitally increase/decrease the volume level on a channel.
+;   level on a channel, and a negavive value decreases volume level.
+;   rxgain: Software receive gain for the channel (into Asterisk). Default: 0.0
+;   txgain: Software transmit gain for the channel (out of Asterisk).
+;   on a channel.  This will digitally amplify quiet sounds while leaving louder
+;   rxdrc: dynamic range compression for the rx channel. Default: 0.0
+;   txdrc: dynamic range compression for the tx channel. Default: 0.0
+; Logical groups can be assigned to allow outgoing roll-over.  Groups range
+; from 0 to 63, and multiple groups can be specified. By default the
+; channel is not a member of any group.
+; Note that an explicit empty value for 'group' is invalid, and will not
+; override a previous non-empty one. The same applies to callgroup and
+; pickupgroup as well.
+group=1
+; Ring groups (a.k.a. call groups) and pickup groups.  If a phone is ringing
+; and it is a member of a group which is one of your pickup groups, then
+; Named ring groups (a.k.a. named call groups) and named pickup groups.
+; If a phone is ringing and it is a member of a group which is one of your
+; named pickup groups, then you can answer it by picking up and dialing *8#.
+; The number of named groups is not limited.
+; Channel variables to be set for all calls from this channel
+;setvar=ATTENDED_TRANSFER_COMPLETE_SOUND=beep   ; This channel variable will
+; Specify whether the channel should be answered immediately or if the simple
+; Add a description for the channel which can be shown through the Asterisk
+; ADSI (Analog Display Services Interface) can be enabled on a per-channel
+; SMDI (Simplified Message Desk Interface) can be enabled on a per-channel
+; basis if you would like that channel to behave like an SMDI message desk.
+; time that will be needed to hangup a channel, but lowers the probability
+; Pulse digits from phones (FXS devices, FXO signalling) are always
+; When FXO signalling (FXS device, e.g. analog phone) is used, overlap dialing
+; is typically used. Asterisk has several configurable (per-channel) timeouts
+; Asterisk from writing to a DAHDI channel regularly. Most users will probably
+;             Asterisk writes to the channel. This is the default mode. It
+; This option specifies what to do when the channel's bridged peer puts the
+; ISDN channel on hold.  Settable per logical ISDN span.
+; hold:         Use HOLD/RETRIEVE signaling to release the B channel while on hold.
+; This option specifies a preference for which music on hold class this channel
+; channel with Set(CHANNEL(musicclass)=whatever) in the dialplan, and the peer
+; channel putting this one on hold did not suggest a music class.
+; This option may be set globally or on a per-channel basis.
+; This option specifies which music on hold class to suggest to the peer channel
+; when this channel places the peer on hold.  This option may be set globally,
+; or on a per-channel basis.
+; This is set globally, rather than per-channel.
+                              ; DAHDI channel. Defaults to "no". An enabled jitterbuffer will
+                              ; side can not accept jitter. The DAHDI channel can't accept jitter,
+                              ; channel. Two implementations are currently available - "fixed"
+; This setting is global, rather than per-channel. It will not update on
+; Each channel consists of the channel number or range.  It inherits the
+;channel => 1
+;channel => 2
+;channel => 3
+;channel => 4
+;channel => 5
+;channel => 6
+;channel => 44
+; different context and use E & M signalling instead.
+;channel => 15
+;channel => 16
+;signalling=em_w
+; All those in group 0 I'll use for outgoing calls
+;signalling=fxs_ls
+;channel => 45
+;signalling=fxo_ls
+;channel => 25
+;channel => 26
+;channel => 27
+;channel => 28
+; Sample PRI (CPE) config:  Specify the switchtype, the signalling as either
+; signalling = pri_cpe
+; group = 2
+; channel => 1-23
+;channel => 1
+;spans - report an "SpanAlarm" event when the span of any configured channel is alarmed
+;all - report channel and span alarms (aggregated behavior)
+; ---------------- Options for use with signalling=ss7 -----------------
+; Variant of SS7 signalling:
+; Point code of node adjacent to this signalling link (Possibly the STP between you and
+; First signalling channel
+; Additional signalling channel for this linkset (So you can have a linkset
+; with two signalling links in it).  It seems like a silly way to do it, but
+; for linksets with multiple signalling links, you add an additional sigchan
+; line for every additional signalling link on the linkset.
+;channel = 25-47
+; ---------------- Options for use with signalling=mfcr2 --------------
+; 'stack' is for very verbose output of the channel and context call stack, only useful
+; execution in extensions.conf without being accepted until the channel is answered (either with Answer() or
+; any other application resulting in the channel being answered).
+; ---------------- END of options to be used with signalling=mfcr2
+; this case the keyword 'channel' is not used. Instead the keyword
+;group = 1
+;group = 1
+;channel => 1-8
+;group = 0,4
+;callgroup = 3
+;pickupgroup = 3
+;pickupgroup = 3,4

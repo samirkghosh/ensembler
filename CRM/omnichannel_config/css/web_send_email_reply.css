@@ -1,0 +1,38 @@
+input[type=text]{ border:1px solid #A9A6A6; border-radius:2px; padding:4px; width:99%; }
+body {
+    padding: 20px;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}	
+ul {
+    list-style-type: none;
+}
+li {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+a {
+    color: purple;
+    text-decoration: underline;
+}
+/*ckeditor__editable*/
+.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred {
+    height: 200px;
+}

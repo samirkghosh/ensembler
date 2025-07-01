@@ -1,0 +1,146 @@
+.heading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #1F1F1F;
+    FONT-FAMILY: 'sans serif,Verdana';
+	font-variant: small-caps;
+}
+
+.subhead
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #6C6C6C;
+    FONT-FAMILY: 'sans serif,Verdana';
+}
+
+.pghead
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12px;
+    COLOR: #1F1F1F;
+    FONT-FAMILY: 'sans serif,Verdana';
+	font-variant: small-caps;
+
+}
+.ttext
+{
+    FONT-SIZE: 10px;
+    COLOR: #666666;
+    FONT-FAMILY: 'sans serif,Verdana';
+	padding-left:5px;
+	
+}
+
+.ttr
+{
+	background-color:#003C77;
+}
+.rowhead
+{
+	FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: white;
+    FONT-FAMILY: 'sans serif,Verdana';
+	height:20;
+}
+.ttd
+{
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    FONT-FAMILY: 'sans serif,Verdana';
+	border-left: none;
+	border-right: none;
+	border-top: 1px;
+	border-top-color: #e0e0e0;
+	border-top-style: solid;
+	border-bottom: 1px;
+	border-bottom-color: #e0e0e0;
+	border-bottom-style: solid;
+}
+thead 
+{
+	font-size: 10px;
+	color: #444444;
+	text-align: left;
+	padding: 0px;
+	FONT-FAMILY: 'sans serif,Verdana';
+}
+ttable
+{
+	width:80%;
+	border:0;
+}
+.error
+{
+	font-size: 10px;
+	color: #990000;
+	font-family:'sans serif,Verdana';
+}
+.cptext
+{
+    FONT-WEIGHT:;
+    FONT-SIZE: 12px;
+    COLOR: #3B5584;
+    FONT-FAMILY: Verdana;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+
+	}
+
+
+
+.cptext a
+{
+    FONT-WEIGHT:;
+    FONT-SIZE: 12px;
+    COLOR: #3B5584;
+    FONT-FAMILY: Verdana;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+	}
+
+
+	.cptext hover
+{
+    FONT-WEIGHT:;
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+	font-weight: bold;
+	TEXT-DECORATION: none;
+
+	}
+
+	.textbox{
+border-bottom: 1px solid black;
+border-left: 1px solid black;
+border-right: 1px solid black; 
+border-top: 1px solid black;
+font-size:8pt;
+font-family:verdana;
+}
+
+.select{
+font-size:8pt;
+font-family:verdana;
+}
+
+.row_2 {
+    background-color: #ededed;
+    padding: .2% .5% .5% 1%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.btn_gen_sched{
+    color: #FFF;
+    background-color: #060;
+    text-align: center;
+    padding: 1% 2%;
+    border: 1px solid #CCC;
+    margin: 2%;
+}

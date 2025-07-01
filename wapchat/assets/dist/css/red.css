@@ -1,0 +1,70 @@
+/* Login Registration forgotpassword */
+.body {
+    background: #fc4a1a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.btn {
+    background: crimson;
+    border-color: crimson;
+}
+
+.btn:hover{
+    background: black;
+    border-color: black;
+}
+.link{
+    color: crimson; 
+}
+.link:hover{
+    color: black; 
+}
+/* End */
+
+.select2-container--bootstrap4 .select2-results__option--highlighted, .select2-container--bootstrap4 .select2-results__option--highlighted.select2-results__option[aria-selected="true"] {
+    color: #fff;
+    background-color: crimson;
+}
+
+/* Sidebar */
+.brand-link .brand-image {
+    float: left; 
+    margin-left: -0.2rem;
+    margin-right: 0.5rem;
+    margin-top: -13px; 
+    max-height: 68px;
+}
+.icon{
+    color: crimson;
+}
+@media (min-width: 992px){
+.sidebar-mini.sidebar-collapse .main-sidebar, .sidebar-mini.sidebar-collapse .main-sidebar::before {
+    margin-left: 0;
+    width: 5.6rem;
+}}
+/* End */
+
+/* footer */
+.foot-img{
+    height: 50px;
+    width:70px;
+    float:right;
+    margin-top:-10px
+}
+/* End */
+
+/* Contact */
+.page-item.active .page-link {
+    background: crimson;
+    border-color: crimson;
+}
+/* End */
+.limi {
+    color: darkgray;
+    font-size: 14px;;
+}
+
+.card-info.card-outline{
+    border-color: crimson;
+}

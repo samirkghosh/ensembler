@@ -1,0 +1,17 @@
+Name/username:Host
+40517771/40517771:(Unspecified)
+40517773/40517773:(Unspecified)
+5701/5701:(Unspecified)
+5702/5702:(Unspecified)
+5703/5703:(Unspecified)
+5704/5704:(Unspecified)
+5705/5705:(Unspecified)
+5706/5706:(Unspecified)
+5707/5707:(Unspecified)
+5708/5708:(Unspecified)
+5709/5709:(Unspecified)
+5710/5710:(Unspecified)
+8901/8901:165.232.183.220
+9811578532/9811578532:(Unspecified)
+sip:172.16.102.16
+15:sip

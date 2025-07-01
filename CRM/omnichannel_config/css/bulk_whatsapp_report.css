@@ -1,0 +1,25 @@
+ 
+.custom-switch.custom-switch-off-danger .custom-control-input~.custom-control-label::before {
+    background-color: #dc3545;
+    border-color: #921925;
+}
+.custom-switch.custom-switch-off-danger .custom-control-input~.custom-control-label::after {
+    background-color: #7c151f;
+}
+.custom-control {
+    position: relative;
+    z-index: 1;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+.custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0;
+}

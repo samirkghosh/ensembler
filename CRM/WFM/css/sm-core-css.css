@@ -1,0 +1,32 @@
+/* SmartMenus Core CSS (it's not recommended editing this)
+===============================================================*/
+
+.sm,.sm ul,.sm li{display: inline-block; height:32px; list-style:none;padding:0;margin:0;line-height:normal;direction:ltr;}
+ul.sm li{position:relative;}
+ul.sm a{position:relative;display:block;}
+ul.sm a.disabled{cursor:default;}
+ul.sm ul{position:absolute;top:-999999px;left:-800px;width:100px;}
+ul.sm li{float:left;}
+ul.sm-rtl{direction:rtl;}
+ul.sm-rtl li{float:right;}
+ul.sm ul li,ul.sm-vertical li{float:none; display:block;border-left: 1px solid #f3f3f3;}
+ul.sm a{white-space:nowrap;}
+ul.sm ul a,ul.sm-vertical a{white-space:normal;}
+* html ul.sm-vertical li{float:left;width:100%;}
+* html ul.sm-vertical ul li{float:none;width:auto;}
+*:first-child+html ul.sm-vertical>li{float:left;width:100%;}
+
+
+#main-menu .sm-nowrap li{ background:#f1f1f1 url(../../images/bullet.gif) 15px center no-repeat; width:150px; border-top:1px solid #dcdcdc; border-bottom:1px solid #fff; border-right:1px solid #dcdcdc; border-left:1px solid #dcdcdc;}
+#main-menu .sub-arrow{ display:none;}
+#main-menu a.highlight{background:#0065c1!important;}
+
+
+ul.sm ul.sm-nowrap>li>a{white-space:nowrap; padding-left:25px;}
+ul.sm ul.sm-nowrap>li>a:hover{white-space:nowrap; background:#fff url(../../images/bullet.gif) 15px center no-repeat;}
+
+ul.sm:after{content:"\00a0";display:block;height:0;font:0/0 serif;clear:both;visibility:hidden;overflow:hidden;}
+* html ul.sm{height:1px;}
+*:first-child+html ul.sm{min-height:1px;}
+ul.sm li *,ul.sm li *:before,ul.sm li *:after{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+ul.sm{-webkit-tap-highlight-color:rgba(0,0,0,0);}
