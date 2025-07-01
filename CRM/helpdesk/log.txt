@@ -1,0 +1,4 @@
+[2025-04-16 17:05:12] Insert failed: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 4
+[DEBUG SQL] INSERT INTO case_dept_timelines (case_id, department, start_time, end_time, duration, category, subcategory)
+									VALUES ('250416007', '3', '2025-04-16 17:07:25', '2025-04-16 17:07:25', '0 days 0 hours 0 minutes 0 seconds', , )
+[2025-04-16 17:07:25] Insert failed: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2

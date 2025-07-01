@@ -1,0 +1,168 @@
+#primary_nav_wrap
+{
+	float:left;
+}
+
+#primary_nav_wrap ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#primary_nav_wrap ul a
+{
+	display:block;
+	color:black;
+	text-decoration:none;
+	font-size:14px;
+	line-height:23px;
+	text-align:center;
+	font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+#primary_nav_wrap ul li
+{
+	position:relative;
+	float:left;
+	margin:0 3px;
+	padding:0;
+	background:#E2E6EF;
+	border:1px solid #DBE1F1;
+}
+
+#primary_nav_wrap ul li.current-menu-item
+{
+	background:black;
+}
+
+#primary_nav_wrap ul li:hover
+{
+	background:rgb(230, 181, 108);
+}
+
+#primary_nav_wrap ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#primary_nav_wrap ul ul li
+{
+	float:none;
+	width:180px;
+	z-index:999 !important;
+	margin:0px !important;
+}
+
+#primary_nav_wrap ul ul a
+{
+	line-height:25px;
+	padding:0px 15px;
+	font-size:12px;
+	text-align:left;
+}
+
+#primary_nav_wrap ul ul ul
+{
+	top:0;
+left:100%
+}
+
+#primary_nav_wrap ul li:hover > ul
+{
+	display:block
+}
+
+
+
+/* by neeti for email sinding */
+.records{ color:#222222; font-size:17px; }
+.box{ font-family:verdana; font-size:13px; color:black !important; }
+.inbox , .outbox , .template , .sign{ font-weight:bold; color:black; font-size:14px; }
+.mail-div td{ border-bottom:1px solid #DBE1F1; }
+</style>
+<style>
+.records{ color:#222222; font-size:17px; margin-top:4px; font-weight:bold; }
+.from{ float:left; width:200px; font-weight:bold; padding-top:4px; } 
+.mailtime{ float:left; width:140px; text-align:right; padding-top:4px; color:#777777; } 
+.subject{ float:left; width:300px; padding-top:6px; } .clear-all{ clear:both; height:2px; }
+.normaltextabhi{ font-size:11px; }
+.mail-tr:hover{ background-color:#C4D5F7; }
+
+.right-box{ font-size:12px; font-family:verdana; color:#ADA49D; text-align:center; border-collapse:collapse; margin-top:160px; width:450px !important; }
+a , font{ font-family:verdana; }
+.mail-pagination{ font-family:verdana; background-color:#E2E6EF; height:30px; }  .mail-pagination td { border:1px solid #DBE1F1; padding:4px; }
+.pagination-div{ float:right; } 
+input[type=text]{ border:1px solid #A9A6A6; border-radius:2px; padding:4px; }
+
+/*---------------------------*/
+
+.button{ 
+	background:url(../images/find.png) no-repeat center transparent; 
+	border:0; 
+	width:24px !important; 
+	height:24px; 
+	vertical-align:top; 
+	}
+
+.refresh{ 
+	background:url(../images/refresh.png) no-repeat center #ffffff !important; 
+	}	
+
+.compose{
+	background:#ffffff; 
+	border:1px solid #A9A6A6;
+	padding:4px;
+	width:80px; 
+	height:24px; 
+	vertical-align:top; 
+	border-radius:2px;
+	color:#084CD6;
+	box-shadow:1px 1px 4px #86A6E6;
+	margin-right:10px;
+	}
+	
+	.compose_template{ 
+	background:#ffffff; 
+	border:1px solid #A9A6A6;
+	padding:4px;
+	width:100px; 
+	height:24px; 
+	vertical-align:top; 
+	border-radius:2px;
+	color:#084CD6;
+	box-shadow:1px 1px 4px #86A6E6;
+	margin-right:10px;
+	}
+	
+.right-msg-head{ border-bottom:1px solid #E2E6EF; padding:5px;  }
+
+.div-left{ width:15%; float:left; }
+
+.div-right{ 
+	font-family:verdana; 
+	width:670px !important; 
+	float:left !important;  
+	padding-left:4px;
+	vertical-align:top; 
+	height:720px; 
+	overflow:auto; 
+	font-size:12px; 
+	}
+.mail-div{ 
+	float:left; 
+	height:720px; 
+	width:370px; 
+	overflow-y:auto; 
+	border-right: 1px solid #DBE1F1; 
+	border-left: 1px solid #DBE1F1;
+    padding-right:4px; padding-left:4px;
+	}
+

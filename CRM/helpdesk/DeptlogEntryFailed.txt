@@ -1,0 +1,5 @@
+[2025-04-16 16:59:18] Failed to create new case for Ticket ID:  - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 4
+[2025-04-16 17:01:25] Failed to forward department for Ticket ID: 250416007 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 4
+[2025-04-16 17:05:12] Failed to forward department for Ticket ID: 250416007 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 4
+[2025-04-16 17:07:25] Failed to forward department for Ticket ID: 250416007 - Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' )' at line 2
+[2025-05-08 17:42:05] Failed to closed Department for Ticket ID: 250418012 - Error: 

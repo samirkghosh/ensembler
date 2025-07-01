@@ -1,0 +1,1 @@
+No such command 'wat show spans' (type 'core show help wat show' for other possible commands)

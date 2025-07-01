@@ -1,0 +1,198 @@
+/*.rightpanel {
+    width: 720px!important;
+    margin-right: 0%!important;
+}
+.container {
+    float: left;
+    width: 100%;
+    padding: 15px 0;
+    background: #fff;
+    min-height: 50%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}*/
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: left;
+    /* margin: 10px 0 10px 10px; */
+    padding: 6px 6px 6px 15px;
+    font-size: 18px !important;
+    font-weight: normal;
+    background-color: #ff4612;
+}
+.row_2 {
+    background-color: #ededed;
+    padding: .2% .5% .5% 1%;
+}
+.row1 {
+    background-color: #fff;
+    padding: .2% .5% .5% 1%;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+label {
+    padding: 5px 10px 5px 10px;
+    display: inline-block;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.erlang-form-box {
+    width: 25%;
+    /*text-align: center;*/
+    margin-left: 10px;
+    float: left;
+    margin-top: 6px;
+}
+.erlang-form-row-label {
+    width: 42%;
+    float: left;
+    padding: 2px;
+}
+#timePeriodInSeconds {
+    /*width: 116px;*/
+    /*height: 37px;*/
+    /*font-size: 16px;*/
+    padding: 0 0 0 10px;
+    }
+.erlang-form-right {
+    /*margin-left: -80px;*/
+    width: 20%;
+    float: left;
+    padding: 6px;
+}
+/*.erlang-form-caption {
+    text-align: center;
+    float: none;
+    padding: 10px 10px 14px 10px;
+}*/
+.date_range{
+	float: left !important;
+    width: 35%;
+    margin-top: 6px;
+    width: 227px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.submit_cal_button{
+	background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #999;
+}
+.erlang-results {
+    width: 580px;
+    height: auto;
+    font-size: 18px;
+}
+#agents {
+    -webkit-animation: slidein4 5s linear;
+}
+#serviceLevel {
+    -webkit-animation: slidein3 4s linear;
+}
+#occupancy {
+    -webkit-animation: slidein2 2.5s linear;
+}
+#contacts {
+    -webkit-animation: slidein1 0.5s linear;
+}
+
+.blue {
+    /*background-color: #0066cc;*/
+}
+.cch-table.small tr {
+    font-size: 12px;
+}
+.cch-table tr:first-child {
+    border-top: none;
+}
+.cch-table.small th {
+    font-size: 11px;
+    padding: 6px 2px 6px 3px;
+}
+.cch-table th:last-child {
+    border-top-right-radius: 3px;
+    border-right: none;
+}
+.cch-table.blue th {
+    background: #0066cc;
+}
+.cch-table th:first-child {
+    border-top-left-radius: 3px;
+}
+.cch-table.text-center th, .cch-table.text-center td {
+    text-align: center;
+}
+.cch-table th {
+    color: #ffffff;
+    background: #177E99;
+    border-right: 1px solid #CCCCCC;
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 700;
+}
+.submit_form {
+    display: block;
+    padding: 15px 0 15px 0;
+    text-align: center;
+    clear: both;
+}
+
+/*.tableview tr td {
+    border: 1px solid #d4d4d4;
+    padding: 5px 10px;
+    text-transform: none;
+    font-size: 12px;
+    height: 10px !important;
+    text-align: left;
+}
+.tableview tr:nth-child(2n+2) {
+    background: #efefef;
+}
+*/
+.cch-table {
+    border: 1px solid #d4d4d4;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    width: 100% !important;
+    color: #828282;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+.cch-table tr {
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    color: #666B85;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgb(255 255 255 / 10%);
+}
+.cch-table.small th {
+    font-size: 11px;
+    padding: 6px 2px 6px 3px;
+}
+.cch-table.text-center th, .cch-table.text-center td {
+    text-align: center;
+}
+.cch-table.small tr {
+  font-size: 16px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

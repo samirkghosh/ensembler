@@ -1,0 +1,29 @@
+{
+    "welcome_message": {
+        "type": "text",
+        "text": "\ud83d\udc4b Welcome to HELB Virtual Assistant!\nHow can I help you today?\n\n1. \ud83c\udf93 Apply for a HELB Loan\n2. \ud83d\udcb0 Loan Repayment\n3. \ud83d\udcc4 Check Loan Status\n4. \ud83d\udd01 Update Personal Details\n5. \ud83d\udcdd Compliance/Statement Request\n6. \ud83d\udcda FAQs\n7. \ud83e\uddd1 Talk to an Agent\n\nReply with a number (e.g., 1)"
+    },
+    "menu_options": {
+        "1": {
+            "text": "\ud83c\udf93 Apply for HELB Loan:\n- Undergraduate: https://portal.helb.co.ke/auth/signin\n- TVET Loans: https://www.helb.co.ke/tvet-loans/\n- Postgraduate: https://www.helb.co.ke/postgraduate-loans/\n- First-Time Applicant Guide: https://www.helb.co.ke/how-to-apply/\n\n\ud83d\udce5 Download Forms:\n- Undergraduate Guide (PDF): https://yourdomain.com/documents/undergraduate-guide.pdf\n- TVET Loan Form (PDF): https://yourdomain.com/documents/tvet-loan-form.pdf"
+        },
+        "2": {
+            "text": "\ud83d\udcb0 Loan Repayment Info:\n- Repayment Methods: https://www.helb.co.ke/loan-repayment/\n- Penalty Waiver Info: https://www.helb.co.ke/penalty-waiver/\n- Employer Portal: https://employer.helb.co.ke/\n\n\ud83d\udce5 Repayment Guide (PDF): https://yourdomain.com/documents/repayment-guide.pdf"
+        },
+        "3": {
+            "text": "\ud83d\udcc4 To check your loan status, log in here: https://portal.helb.co.ke/auth/signin"
+        },
+        "4": {
+            "text": "\ud83d\udd01 Update Details:\n- Change Phone/Email: Login and update: https://portal.helb.co.ke\n- Update Employer Info: https://www.helb.co.ke/loan-repayment/"
+        },
+        "5": {
+            "text": "\ud83d\udcdd Compliance & Loan Statement:\n- Request Compliance Certificate: https://www.helb.co.ke/compliance-certificate/\n- View/Download Statement: https://portal.helb.co.ke\n\n\ud83d\udce5 Compliance Request Form (PDF): https://yourdomain.com/documents/compliance-request-form.pdf"
+        },
+        "6": {
+            "text": "\ud83d\udcda FAQs:\nRead answers to common questions here: https://www.helb.co.ke/faqs/"
+        },
+        "7": {
+            "text": "\ud83e\uddd1 Please describe your issue. An agent will assist you shortly."
+        }
+    }
+}

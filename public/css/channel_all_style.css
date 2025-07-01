@@ -1,0 +1,208 @@
+.accordion-toggle .expand-button:after{
+    position: absolute;
+    left:.75rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    content: '-';
+  }
+  .toggle-button:before
+  {
+    content: '+';
+    font-size: 20px;
+    color: #047edf;
+    padding-right: 10px;
+  }
+/* Styling for the toggle button */
+.toggle-button {
+cursor: pointer;
+}
+/* Styling for hidden rows */
+.hidden-row {
+display: none;
+}
+.table-bordered > :not(caption) > * {
+border-width: 1px 0;
+}
+thead, tbody, tfoot, tr, td, th {
+border-color: inherit;
+border-style: solid;
+border-width: 0;
+}
+.tableview tr td a {
+color: #f6e6ff;
+}
+.text-white {
+color: #fff!important;
+}
+.fil_div
+{
+width:20px;
+height:20px;
+border:1px solid #999999;
+border-radius:5px;
+white-space: nowrap;
+}
+
+ /*read and unread color flow changes [Aarti][06-01-2024]*/
+ .Unread{
+    background:#f1f1f1 !important;
+    margin-left: -50px !important;
+    display: inline-block !important;
+  }
+
+  .Read{
+    background:#ffffff !important;
+    margin-left: -73px !important;
+  }
+
+  .mail-row {
+    cursor: pointer;
+    font-weight: bold; /* Bold for unread emails */
+    background-color: #f1f1f1 !important; /* Light blue background for unread emails */      
+  }
+  .tableview tr td a{
+      color: #555;
+  }
+  .mail-row td a{
+      color:#3974aa;    
+  }
+
+  /*END -06-01-2024*/
+.read-container {
+margin-left: 400px; /* Adjust this value to control the gap */
+}
+
+.flag-yellow {
+background:#f1a00bd4 !important; 
+color:#fff;
+}
+
+.flag-red {
+background:#e34234db !important; 
+color:#fff;
+}
+
+.flag-green {
+background:#228b22de !important; 
+color:#fff;
+}
+.read-container {
+    margin-left: 550px; /* Adjust this value to control the gap */
+}
+
+/* NEW CSS----------17-08-2024 */
+.top-bar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:green;
+}
+.contact-name {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.agent-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #4CAF50; /* Green color to match the send button and message background */
+}
+.chat-container {
+    padding: 10px;
+    background-color: #ffffff;
+    max-height: unset; /* Remove max-height */
+    overflow: hidden; /* Prevent double scrolling */
+}
+.message {
+     padding: 8px;
+    margin: 8px 0;
+    border-radius: 5px;
+    max-width: 80%;
+    position: relative;
+}
+.message.received {
+    background-color: #e9e9e9;
+    align-self: flex-start;
+}
+
+.message.sent {
+    background-color: #d0f0c0; /* Light green background for sent messages */
+    align-self: flex-end;
+}
+.message-time {
+    font-size: 10px;
+    color: #888;
+    margin-bottom: 5px;
+    display: block;
+}
+.message-logo {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    float: right;
+    margin-left: 5px;
+}
+.message-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+.message-input input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    margin-right: 10px;
+}
+/*.message-input #dm_button {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}*/
+#dm_button {
+    padding: 8px 12px;
+    background-color: #4CAF50; /* Green color for the send button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#dm_button:hover {
+    background-color: #45a049;
+}
+.chat-window {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f7f7f7;
+border: 1px solid #ddd;
+}
+
+.no-message {
+    text-align: center;
+    color: #999;
+}
+
+.no-message i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.no-message p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.no-message small {
+    font-size: 14px;
+    color: #666;
+}

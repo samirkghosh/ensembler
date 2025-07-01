@@ -1,0 +1,32 @@
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);*/
+
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {margin: 0; padding: 0; border: 0; list-style: none; font-weight: normal; text-decoration: none; line-height: 1; font-family: 'Open Sans', sans-serif; font-size: 14px; position: relative;}
+#cssmenu a { line-height: 1.3;}
+
+#cssmenu {margin-left: 13px; width: 235px; clear:both;}
+#cssmenu > ul > li > a {
+  padding-left: 30px; font-size:25px; font-weight: bold; display: block; background: #d4d2d2; color: #828282; border: 1px solid #b4b4b4;  text-transform: capitalize; position: relative; margin-bottom:-1px;}
+#cssmenu > ul > li > a > span {background: #f3f1f1;  padding:5px 10px;  display: block;  font-size: 12px;  font-weight: 300;}
+#cssmenu > ul > li > a:hover {  text-decoration: none;}
+#cssmenu > ul > li.active {  border-bottom: none;}
+#cssmenu > ul > li.active > a {  color: #595959;}
+#cssmenu > ul > li.active > a span {  background: ;}
+#cssmenu span.cnt {  position: absolute;  top: 4px;  left: 4px;  padding: 10px;  margin: 0;  background: none;  background:url(../../images/accordingplus.jpg) center no-repeat;}
+#cssmenu > ul > li.active .cnt {background: url(../../images/accordingminus.jpg) center no-repeat;}
+/* Secound level */
+#cssmenu > ul > li.active li .cnt{background:url(../../images/accordingplus.jpg) center no-repeat;}
+#cssmenu ul ul li.active .cnt{  background:#d4d2d2 url(../../images/accordingminus.jpg) center no-repeat!important;}
+#cssmenu  ul ul li span.cnt {left:3px!important; top: 3px; left:inherit; width:3px; height:4px; background:#d4d2d2 url(../../images/accordingplus.jpg) center no-repeat!important; position:static; float:left; margin: -4px 6px 0 -4px;}
+#cssmenu  ul ul li ul {}
+#cssmenu  ul ul li ul li{ border-top:1px solid #e0e0e0!important; margin-bottom:-1px; padding-left:20px;background: #e0e0e0;}
+#cssmenu ul ul li{ background:#fff;}
+#cssmenu ul ul {  display: none;}
+#cssmenu ul ul li {  border: 1px solid #e0e0e0;  border-top: 0;}
+#cssmenu ul ul a {  padding:8px;  display: block;  color: #595959;  font-size: 13px;background: #fff;}
+#cssmenu ul ul a:hover {  color: #595959;  background:#e8e8e8;}
+#cssmenu ul ul li.odd {  background: #f4f4f4;}
+#cssmenu ul ul li.even { background: #fff;}
