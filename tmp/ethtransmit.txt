@@ -1,1 +1,0 @@
-        TX packets 475592  bytes 278687081 (278.6 MB)
